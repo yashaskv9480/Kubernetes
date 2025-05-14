@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: fitfactory-replicaset
+  labels:
+    name: fit-factory-replicaSet
+spec:
+  selector:
+    matchLabels:
+      name: fit-factory-replicaSet
+  template:
+    metadata:
+      name: fit-factory-replicaSet
+      labels:
+        name: fit-factory-replicaSet
+        app: backend
+    spec:
+      containers:
+        - name: fit-factory-server
+          image: fit_factory_server:1.0
+  replicas: 3
+    

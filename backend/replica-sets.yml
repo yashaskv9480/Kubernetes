@@ -21,8 +21,5 @@ spec:
         image: fit-factory-server:1.0
         env:
           - name: PG_NAME
-            value: demo 
-  replicas: 4
-
-
+            value: demo
   
