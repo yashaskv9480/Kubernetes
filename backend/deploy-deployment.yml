@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fit-factory-server-deployment
+  labels:
+    name: fit-factory-server-deployment
+spec:
+  selector:
+    matchLabels:
+      name: fit-factory-server-deployment-pod
+  template:
+    metadata:
+      name: fit-factory-server-deployment-pod
+      labels:
+        name: fit-factory-server-deployment-pod
+    spec:
+      containers:
+        - name: fit-factory-server-container
+          image: fit_factory_server:1.0
+  replicas: 3
