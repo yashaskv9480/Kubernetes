@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: fit-factory-server
-          image: fit_factory_server:1.0
+          image: fit_factory_server:2.0
   replicas: 3
     

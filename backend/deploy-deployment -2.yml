@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fit-factory-server-deployment
+  name: fit-factory-server-deployment-2
   labels:
     name: fit-factory-server-deployment
 spec:
@@ -19,7 +19,10 @@ spec:
           image: fit_factory_server:2.0   
   replicas: 3
   strategy:
-    type: Recreate
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
     
   
     
