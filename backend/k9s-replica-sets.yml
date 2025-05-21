@@ -18,5 +18,8 @@ spec:
       containers:
         - name: fit-factory-server
           image: fit_factory_server:2.0
+          env:
+            - name: PG_NAME
+              value: demo
   replicas: 3
     
