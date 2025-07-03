@@ -3,12 +3,9 @@ kind: Pod
 metadata:
   name: fit-factory-client
   labels:
-    name: fit_factory_client
+    name: fit-factory-client
     app: frontend
 spec:
   containers:
     - name: fit-factory-client
-      image: fit_factory_client:latest
-      env:
-        - name: REACT_APP_BACKED_API
-          value: http://backend-clustserip:5000/api
+      image: fit_factory_client:2.0
