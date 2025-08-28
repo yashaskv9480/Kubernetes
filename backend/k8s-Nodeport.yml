@@ -7,8 +7,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-      app: fitfactory-server
-      type: backend
+      name: fit-factory-server
   ports:
     - port: 80
       targetPort: 5000

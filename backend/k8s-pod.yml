@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: fit_factory_server
+  name: fit-factory-server
   labels:
-    name: fit_factory_server
+    name: fit-factory-server
 spec:
   containers:
-  - name: fit_factory_server
+  - name: fit-factory-server
     image: fit_factory_server:1.0
     env:
       - name: PG_NAME

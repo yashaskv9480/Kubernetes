@@ -8,4 +8,4 @@ metadata:
 spec:
   containers:
     - name: fit-factory-client
-      image: fit_factory_client:2.0
+      image: fit_factory_client:1.0
